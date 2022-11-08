@@ -35,8 +35,8 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
         final int position = viewHolder.getAdapterPosition();
         if (direction == ItemTouchHelper.LEFT) {
             AlertDialog.Builder builder = new AlertDialog.Builder(adapter.getContext());
-            builder.setTitle("Delete Task");
-            builder.setMessage("Are you sure you want to delete this Task?");
+            builder.setTitle("Delete ToDo");
+            builder.setMessage("Are you sure you want to delete this ToDo?");
             builder.setPositiveButton("Confirm",
                     new DialogInterface.OnClickListener() {
                         @Override
